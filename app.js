@@ -13,7 +13,7 @@ const menuData = [
     categoryName: 'Desi Ghee Mithai',
     price: '₹980 / kg',
     desc: 'Crafted with premium grade Goan cashews and authentic edible silver vark. Melt-in-mouth texture.',
-    badge: 'Bestseller ⭐',
+    badge: 'Bestseller',
     veg: true
   },
   {
@@ -382,14 +382,14 @@ function initInquiryForm() {
     const items = document.getElementById('inquiryItems')?.value.trim() || 'Pure Desi Ghee Sweets & Bakery Items';
     const notes = document.getElementById('inquiryNotes')?.value.trim() || '';
 
-    let text = `Hello Ras Mantra Sweets & Bakers (Badrinath)! 👋\n\n`;
+    let text = `Hello Ras Mantra Sweets & Bakers (Badrinath)!\n\n`;
     text += `I would like to place an inquiry / order:\n`;
-    text += `👤 *Name:* ${name}\n`;
-    text += `📞 *Phone:* ${phone}\n`;
-    text += `🎉 *Occasion:* ${occasion}\n`;
-    text += `🍬 *Items Required:* ${items}\n`;
+    text += `*Name:* ${name}\n`;
+    text += `*Phone:* ${phone}\n`;
+    text += `*Occasion:* ${occasion}\n`;
+    text += `*Items Required:* ${items}\n`;
     if (notes) {
-      text += `📝 *Notes/Date:* ${notes}\n`;
+      text += `*Notes/Date:* ${notes}\n`;
     }
     text += `\nPlease let me know the availability and pricing. Thank you!`;
 
@@ -409,9 +409,9 @@ function submitModalInquiry() {
 
   let text = `Namaste Ras Mantra Sweets & Bakers (By Badrinath),\n\n`;
   text += `I would like to order: *${item}*\n`;
-  text += `📦 *Quantity:* ${qty}\n`;
-  text += `👤 *Name:* ${name}\n`;
-  if (phone) text += `📞 *Phone:* ${phone}\n`;
+  text += `*Quantity:* ${qty}\n`;
+  text += `*Name:* ${name}\n`;
+  if (phone) text += `*Phone:* ${phone}\n`;
   text += `\nPlease confirm availability and pickup/delivery options at Ram Naresh Square, Matiyari.`;
 
   window.open(`https://wa.me/916387310730?text=${encodeURIComponent(text)}`, '_blank');

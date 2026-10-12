@@ -1225,7 +1225,15 @@ button, input, select, textarea {
 }
 
 .mobile-bar-btn .btn-icon {
-  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.mobile-bar-btn .btn-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .mobile-bar-btn.call {
@@ -1355,9 +1363,46 @@ button, input, select, textarea {
   .header-actions .btn-outline {
     display: none;
   }
+
+  .header-actions .btn-gold {
+    padding: 7px 14px;
+    font-size: 0.85rem;
+  }
   
+  .brand-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.68rem;
+  }
+
+  .hero-section {
+    padding: 36px 0 50px;
+  }
+
   .hero-title {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-gold,
+  .hero-cta-group .btn-outline {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 0.95rem;
   }
   
   .hero-trust-bar {
@@ -1369,30 +1414,112 @@ button, input, select, textarea {
     position: static;
     margin: 10px 0;
     animation: none;
+    width: 100%;
+  }
+
+  .section-head {
+    margin-bottom: 32px;
+  }
+
+  .section-head h2 {
+    font-size: 1.85rem;
   }
   
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-card {
+    padding: 24px 18px;
+  }
+
+  .menu-section,
+  .highlights-section,
+  .hampers-section,
+  .reviews-section,
+  .location-section,
+  .inquiry-section {
+    padding: 50px 0;
+  }
+
+  .menu-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .tab-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 8px 14px;
+    font-size: 0.85rem;
   }
   
   .menu-items-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .menu-card {
+    padding: 18px;
+  }
+
+  .hampers-content h2 {
+    font-size: 1.85rem;
+  }
+
+  .hampers-image-wrapper img {
+    height: 260px;
   }
   
   .hampers-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
   
   .reviews-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .info-header h2 {
+    font-size: 1.85rem;
+  }
+
+  .location-info-card {
+    padding: 24px 18px;
+  }
+
+  .map-embed-wrapper {
+    min-height: 280px;
+  }
+
+  .map-embed-wrapper iframe {
+    min-height: 280px;
   }
   
   .location-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .inquiry-box {
+    padding: 24px 18px;
+  }
+
+  .inquiry-box h3 {
+    font-size: 1.5rem;
   }
   
   .inquiry-form-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
   
   .form-group.full-width {
@@ -1403,8 +1530,48 @@ button, input, select, textarea {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
   
   .mobile-bottom-bar {
     display: block;
+  }
+
+  .modal-content {
+    padding: 24px 18px;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .brand-text h2 {
+    font-size: 1.15rem;
+  }
+
+  .brand-logo-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .mobile-bar-btn {
+    font-size: 0.68rem;
+    padding: 5px 2px;
+  }
+
+  .mobile-bar-btn .btn-icon svg {
+    width: 18px;
+    height: 18px;
   }
 }
